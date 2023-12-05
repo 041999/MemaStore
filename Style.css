@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    background: #fbf9f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* header */
+
+.nav-container {
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 1;
+    position: absolute;
+}
+
+.nav-container .logo {
+    width: 300px;
+}
+
+.nav-container .logo img {
+    border-radius: 50%;
+    margin: auto;
+}
+
+.mema {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: black;
+    padding: 8px 18px;
+    border-radius: 15px;
+    transition: .5s;
+    margin: 0 20px;
+    margin-top: 90px;
+    margin-right: 60px;
+    text-align: right;
+    flex: 1;
+    background: grey;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background: white;
+}
+
+/* content */
+
+.content {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    height: 667px;
+    flex-direction: column;
+    background: url(image.logo-b.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+c.content-box {
+    margin-left: 15%;
+}
+
+.content-box h2 {
+    color: orangered;
+}
+
+.content-box label {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.content-box label span {
+    color: orangered;
+}
+
+.content-box a {
+    display: inline-block;
+    margin: 25px;
+    padding: 10px;
+    color: black;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    box-shadow: 4px 4px 10px #b7b6b6, -4px -4px 10px #fff
+}
+
+.content-box a:hover {
+    box-shadow: -4px -4px 10px #b7b6b6, 4px 4px 10px #fff
+}
+
+/*category*/
+
+.category {
+    background: #fbf9f9;
+    margin-top: 80px 0;
+}
+
+.category-title {
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.category-title h2 {
+    text-align: center;
+}
+
+.category .category-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category .category-box .box {
+    margin: 30px 20px;
+}
+
+.category .category-box .box-content img {
+    width: 600px;
+    border-radius: 5px;
+    height: 32px;
+    display: flex;
+}
+
+.category .category-box .box-content {
+    position: absolute;
+    z-index: 1;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.category .category-box .box-content h3 {
+    color: rgb(255, 103, 103);
+}
+
+.category .category-box .box-content label {
+    display: block;
+    color: rgb(255, 103, 103);
+}
+
+.category .category-box .box-content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: white;
+    transition: all .19s ease-in;
+    color: black;
+}
+
+.category .category-box .box-content a:hover {
+    background: rgb(255, 237, 237);
+}
+
+.category .category-box .box-content .b2 h3 {
+    color: rgb(91, 253, 2);
+}
+
+.category .box-content .box-content .b2 label {
+    color: rgb(91, 253, 2);
+}
+
+/*Best Seller*/
+
+.best-seller {
+    padding: 50px;
+    background: #fbf9f9;
+    margin: 50px 0;
+}
+
+.best-seller-box .best-seller-title {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.best-seller-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.best-seller-items .best-seller-item {
+    padding: 20px;
+    margin: 80px 30px;
+    height: 300px;
+}
+
+.best-seller-items .best-seller-item .best-seller-image img {
+    height: 250px;
+}
+
+.best-seller-items .best-seller-item .best-seller-body {
+    margin-top: 15px;
+}
+
+.best-seller-items .best-seller-item .best-seller-body h4 {
+    color: gray;
+}
+
+.best-seller-items .best-seller-item .best-seller-body .icons i {
+    color: orange;
+}
+
+.best-seller-items .best-seller-item .best-seller-body .price label .sale {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* popular products */
+
+.popular-products {
+    padding: 50px;
+    margin-bottom: 120px;
+    background: #fbf9f9;
+}
+
+.popular-products-box .popular-products-title {
+    margin: 60px 0;
+}
+
+.popular-products-box .popular-products-title h2 {
+    text-align: center;
+}
+
+.popular-products-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.popular-products-items .popular-products-item {
+    padding: 20px;
+    margin: 90px 60px;
+    height: 300px;
+}
+
+.popular-products-items .popular-products-item .popular-products-image img {
+    height: 250px;
+}
+
+.popular-products-items .popular-products-item .popular-products-body {
+    margin-top: 15px;
+}
+
+.popular-products-items .popular-products-item .popular-products-body h4 {
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.popular-products-items .popular-products-item .popular-products-body .price label .sale {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.popular-products-box .popular-products-btn {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.popular-products-box .popular-products-btn button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #dbcfcf;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: .2s all ease-in;
+    letter-spacing: 1px;
+}
+
+.popular-products-box .popular-products-btn button:hover {
+    background: #f8dcdc;
+}
+
+/* discount news */
+.discount-news-box {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    background: #f7e7e7;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.discount-news-box .discount-news-content {
+    letter-spacing: 1px;
+    line-height: 59px;
+}
+
+.discount-news-box .discount-news-content p {
+    margin: 30px 0 0 50px;
+}
+
+.discount-news-box .discount-news-content .time {
+    margin: 60px 0 46px;
+}
+
+.discount-news-box .discount-news-content .time label {
+    margin: 0 12px;
+}
+
+.discount-news-box .discount-news-content .time label span {
+    margin-left: 15px;
+}
+
+.discount-news-box .discount-news.image {
+    display: flex;
+    align-items: center;
+}
+
+.discount-news-box .discount-news.image img {
+    width: 300px;
+    margin-right: 100px; 
+    margin-top: 12px;
+}
+
+
+/* our-services */
+
+
+.our-services-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.our-services-item {
+    text-align: center;
+    margin: 0 120px; 
+}
+
+.our-services-icon i {
+    font-size: 24px;
+    color: black;
+}
+
+.our-services-body {
+    margin-top: 10px;
+}
+
+.our-services-body h3 {
+    margin: 5px 0;
+    color: black;
+    font-size: 16px;
+}
+
+.our-services-body label {
+    color: black;
+    font-size: 14px;
+}
+
+
+/* footer */
+
+.footer {
+    padding: 80px 90px;
+    background: #241816;
+    margin-top: 30px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #241816;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-box .footer-i h4 {
+    margin-bottom: 30px;
+}
+
+.footer-box .footer-i label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: rgb 137, 130, 130;
+}
+
+.footer-box .footer-i .f2 {
+    margin: 30px;
+}
+
+.footer-box .footer-i .f3 {
+    position: relative;
+    bottom: 40px;
+}
+
+.footer-box .footer-i .f4 {
+    position: relative;
+    top: 32px;
+}
+
+.footer-box .footer-i .f4 label {
+    width: 400px;
+    display: block;
+    line-height: 22px;
+}
+
+.footer-box .footer-i .f4 input {
+    display: inline-block;
+    margin-top: 20px;
+    width: 300px;
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+}
+
+.footer-box .footer-i .f4 button {
+    padding: 12px;
+    position: relative;
+    right: 8px;
+    background: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-box .footer-i .f4 .social-media {
+    margin-top: 30px;
+}
+
+.footer-box .footer-i .f4 .social-media a i {
+    color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    padding: 13px;
+}
+
+.footer-box .footer-i .f4 .social-media a i:hover {
+    background: white;
+    color: black;
+}
+
